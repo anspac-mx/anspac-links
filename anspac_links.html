@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ANSPAC | Videos</title>
+<style>
+  :root{
+    --azul:#003399; /* azul ANSPAC aprox */
+    --amarillo:#ffcc00;
+    --blanco:#ffffff;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    background: var(--blanco);
+    color:#0b1221;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:100vh;
+    padding:24px;
+  }
+  .card{
+    width:100%;
+    max-width:640px;
+    background:#fff;
+    border:1px solid #e8e8ef;
+    border-radius:20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.06);
+    overflow:hidden;
+  }
+  .header{
+    background: var(--azul);
+    color:#fff;
+    padding:24px 20px 64px;
+    text-align:center;
+    position:relative;
+  }
+  .logo{
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    background: var(--amarillo);
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:800;
+    color:#0b1221;
+    border:4px solid #fff;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-41px;
+  }
+  .content{
+    padding:64px 20px 28px;
+  }
+  h1{
+    margin:0 0 6px;
+    font-size:24px;
+    letter-spacing:.2px;
+    text-align:center;
+    color:#0b1221;
+  }
+  p.sub{
+    margin:0 0 20px;
+    text-align:center;
+    color:#4a4f63;
+    font-size:14px;
+  }
+  .buttons{
+    display:grid;
+    gap:12px;
+    margin:10px auto 6px;
+    width:100%;
+    max-width:500px;
+  }
+  a.btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    font-weight:700;
+    border-radius:14px;
+    padding:16px 18px;
+    border:2px solid var(--azul);
+    background:#fff;
+    color:var(--azul);
+    transition: transform .04s ease, box-shadow .2s ease, background .2s ease, color .2s ease;
+  }
+  a.btn:hover{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.08);
+    background: var(--azul);
+    color:#fff;
+  }
+  .yt{ border-color:#cc0000 }
+  .yt:hover{ background:#cc0000 }
+  .fb{ border-color:#1877f2 }
+  .fb:hover{ background:#1877f2 }
+  .footer{
+    text-align:center;
+    padding: 6px 16px 20px;
+    color:#6b7187;
+    font-size:12px;
+  }
+  .tag{
+    display:inline-block;
+    margin:6px auto 0;
+    padding:4px 10px;
+    background:#f5f7ff;
+    border:1px solid #e6e9fb;
+    border-radius:999px;
+    color:#384060;
+    font-size:12px;
+  }
+</style>
+</head>
+<body>
+  <main class="card" role="main" aria-label="Página de enlaces ANSPAC">
+    <header class="header">
+      <h2 style="margin:0;font-size:20px;letter-spacing:.5px;">ANSPAC</h2>
+      <div class="logo" aria-hidden="true">★</div>
+    </header>
+    <section class="content">
+      <h1>Videos destacados</h1>
+      <p class="sub">Elige una plataforma para ver el contenido.</p>
+      <div class="buttons">
+        <a class="btn yt" href="https://www.youtube.com/watch?v=W5PzLQuTr0M" target="_blank" rel="noopener noreferrer" aria-label="Ver video en YouTube">
+          ▶️ Ver en YouTube
+        </a>
+        <a class="btn fb" href="https://www.facebook.com/share/v/19Gx9mGZJH/" target="_blank" rel="noopener noreferrer" aria-label="Ver video 1 en Facebook">
+          📘 Ver en Facebook (Video 1)
+        </a>
+        <a class="btn fb" href="https://www.facebook.com/share/v/1CNxB7Xyqh/" target="_blank" rel="noopener noreferrer" aria-label="Ver video 2 en Facebook">
+          📘 Ver en Facebook (Video 2)
+        </a>
+      </div>
+      <div class="footer">
+        <span class="tag">Hecho para lectura rápida en móvil</span>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
